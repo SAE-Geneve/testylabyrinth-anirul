@@ -17,23 +17,17 @@ Character::Character(
 
 void Character::Attack(Character& enemy) const
 {
-	float dist = Distance(enemy);
-	if (std::abs(dist - 1.0f) < std::numeric_limits<float>::epsilon())
-	{
-		enemy.SetHealthPoints(
-			enemy.GetHealthPoints() - 
-			std::max(0, attack_ - enemy.GetDefence()));
-	}
+	// TODO: Complete me!
 }
 
 bool Character::IsDead() const
 {
-	return health_points_ <= 0;
+	// TODO: Complete me!
+	return false;
 }
 
 float Character::Distance(const Character& character) const
 {
-	float a2 = std::pow((float)(xy_.first - character.xy_.first), 2.0f);
-	float b2 = std::pow((float)(xy_.second - character.xy_.second), 2.0f);
-	return std::sqrt(a2 + b2);
+	// TODO: Complete me!
+	return 1.0f;
 }
